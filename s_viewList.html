@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Blog</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+        <link rel="stylesheet" href="s_viewList.css">
+
+        <style></style>
+    </head>
+    <body>
+        <div id="content" class="view-list">
+            <header id="main_header">
+                <div id="header">
+                    <img
+                        class="background_img"
+                        src="https://cdn.imweb.me/upload/S202207202685e30f16e24/8b48c67f8cdf6.jpeg"
+                        alt="헤더배경이미지">
+                    <div class="profile_area">
+                        <img
+                            class="profile_img"
+                            alt="프로필 이미지"
+                            src="https://blog.kakaocdn.net/dn/dhMWqI/btq9fk93teQ/i6Ss2qhfIDmvFvrO1QoZ1K/img.png">
+                        <div class="social">
+                            Social
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">Google</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="nav_menu">
+                <div class="nav_menu_name">
+                    <a href="#">
+                        kim haein's Channel
+                        <i class="fas fa-check-circle text-success"></i>
+                    </a>
+                </div>
+                <ul class="nav_menu_list">
+                    <li class="list_item">
+                        <a href="#">Videos</a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#">Playlist</a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#">Channels</a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#">Discussion</a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#">Donate</a>
+                    </li>
+                </ul>
+                <div class="nav_menu_search">
+                    <form>
+                        <input placeholder="Search" aria-label="Search">
+                        <button class="btn" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="vidio_header">
+                    <h2>Videos</h2>
+                    <div class="vidio_header-sub">
+                        <select id="list_sortby">
+                            <option value="none">=== sortby ===</option>
+                            <option value="1" selected="selected">
+                                Top Rated
+                            </option>
+                            <option value="2">
+                                Viewed</option>
+                            <option value="3">
+                                Close</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="video_content">
+                    <div class="video-card">
+                        <div class="video_img">
+                            <a href="#">
+                                <img
+                                    class="video_thumb"
+                                    src="https://pbs.twimg.com/media/EYEZb15UYAQfWj9.jpg"
+                                    alt="비디오썸네일">
+                            </a>
+                            <button class="video_play_btn" type="button">
+                                <i class="fas fa-play-circle"></i>
+                            </button>
+                            <span class="video_runningtime">2:04</span>
+                        </div>
+                        <div class="video_info">
+                            <a href="#">
+                                <h3 class="video_title">
+                                    제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                </h3>
+                            </a>
+                            <a href="#">
+                                <span class="video_group green">
+                                    퓨어2022 겨울스탁
+                                    <i class="fas fa-frown green"></i>
+                                </span>
+                            </a>
+                            <span class="video_detail">
+                                1.8M views
+                                <i class="fas fa-calendar-alt"></i>
+                                11 Months ago
+                            </span>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video_img">
+                            <a href="#">
+                                <img
+                                    class="video_thumb"
+                                    src="https://pbs.twimg.com/media/EYEZb15UYAQfWj9.jpg"
+                                    alt="비디오썸네일">
+                            </a>
+                            <button class="video_play_btn" type="button">
+                                <i class="fas fa-play-circle"></i>
+                            </button>
+                            <span class="video_runningtime">2:04</span>
+                        </div>
+                        <div class="video_info">
+                            <a href="#">
+                                <h3 class="video_title">
+                                    제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                </h3>
+                            </a>
+                            <a href="#">
+                                <span class="video_group red">
+                                    퓨어2022 겨울스탁
+                                    <i class="fas fa-frown red"></i>
+                                </span>
+                            </a>
+                            <span class="video_detail">
+                                1.8M views
+                                <i class="fas fa-calendar-alt"></i>
+                                11 Months ago
+                            </span>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video_img">
+                            <a href="#">
+                                <img
+                                    class="video_thumb"
+                                    src="https://pbs.twimg.com/media/EYEZb15UYAQfWj9.jpg"
+                                    alt="비디오썸네일">
+                            </a>
+                            <button class="video_play_btn" type="button">
+                                <i class="fas fa-play-circle"></i>
+                            </button>
+                            <span class="video_runningtime">2:04</span>
+                        </div>
+                        <div class="video_info">
+                            <a href="#">
+                                <h3 class="video_title">
+                                    제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                </h3>
+                            </a>
+                            <a href="#">
+                                <span class="video_group green">
+                                    퓨어2022 겨울스탁
+                                    <i class="fas fa-frown green"></i>
+                                </span>
+                            </a>
+                            <span class="video_detail">
+                                1.8M views
+                                <i class="fas fa-calendar-alt"></i>
+                                11 Months ago
+                            </span>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video_img">
+                            <a href="#">
+                                <img
+                                    class="video_thumb"
+                                    src="https://pbs.twimg.com/media/EYEZb15UYAQfWj9.jpg"
+                                    alt="비디오썸네일">
+                            </a>
+                            <button class="video_play_btn" type="button">
+                                <i class="fas fa-play-circle"></i>
+                            </button>
+                            <span class="video_runningtime">2:04</span>
+                        </div>
+                        <div class="video_info">
+                            <a href="#">
+                                <h3 class="video_title">
+                                    제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                </h3>
+                            </a>
+                            <a href="#">
+                                <span class="video_group red">
+                                    퓨어2022 겨울스탁
+                                    <i class="fas fa-frown red"></i>
+                                </span>
+                            </a>
+                            <span class="video_detail">
+                                1.8M views
+                                <i class="fas fa-calendar-alt"></i>
+                                11 Months ago
+                            </span>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video_img">
+                            <a href="#">
+                                <img
+                                    class="video_thumb"
+                                    src="https://pbs.twimg.com/media/EYEZb15UYAQfWj9.jpg"
+                                    alt="비디오썸네일">
+                            </a>
+                            <button class="video_play_btn" type="button">
+                                <i class="fas fa-play-circle"></i>
+                            </button>
+                            <span class="video_runningtime">2:04</span>
+                        </div>
+                        <div class="video_info">
+                            <a href="#">
+                                <h3 class="video_title">
+                                    제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                </h3>
+                            </a>
+                            <a href="#">
+                                <span class="video_group green">
+                                    퓨어2022 겨울스탁
+                                    <i class="fas fa-frown green"></i>
+                                </span>
+                            </a>
+                            <span class="video_detail">
+                                1.8M views
+                                <i class="fas fa-calendar-alt"></i>
+                                11 Months ago
+                            </span>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video_img">
+                            <a href="#">
+                                <img
+                                    class="video_thumb"
+                                    src="https://pbs.twimg.com/media/EYEZb15UYAQfWj9.jpg"
+                                    alt="비디오썸네일">
+                            </a>
+                            <button class="video_play_btn" type="button">
+                                <i class="fas fa-play-circle"></i>
+                            </button>
+                            <span class="video_runningtime">2:04</span>
+                        </div>
+                        <div class="video_info">
+                            <a href="#">
+                                <h3 class="video_title">
+                                    제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                </h3>
+                            </a>
+                            <a href="#">
+                                <span class="video_group red">
+                                    퓨어2022 겨울스탁
+                                    <i class="fas fa-frown red"></i>
+                                </span>
+                            </a>
+                            <span class="video_detail">
+                                1.8M views
+                                <i class="fas fa-calendar-alt"></i>
+                                11 Months ago
+                            </span>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video_img">
+                            <a href="#">
+                                <img
+                                    class="video_thumb"
+                                    src="https://pbs.twimg.com/media/EYEZb15UYAQfWj9.jpg"
+                                    alt="비디오썸네일">
+                            </a>
+                            <button class="video_play_btn" type="button">
+                                <i class="fas fa-play-circle"></i>
+                            </button>
+                            <span class="video_runningtime">2:04</span>
+                        </div>
+                        <div class="video_info">
+                            <a href="#">
+                                <h3 class="video_title">
+                                    제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                </h3>
+                            </a>
+                            <a href="#">
+                                <span class="video_group green">
+                                    퓨어2022 겨울스탁
+                                    <i class="fas fa-frown green"></i>
+                                </span>
+                            </a>
+                            <span class="video_detail">
+                                1.8M views
+                                <i class="fas fa-calendar-alt"></i>
+                                11 Months ago
+                            </span>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video_img">
+                            <a href="#">
+                                <img
+                                    class="video_thumb"
+                                    src="https://pbs.twimg.com/media/EYEZb15UYAQfWj9.jpg"
+                                    alt="비디오썸네일">
+                            </a>
+                            <button class="video_play_btn" type="button">
+                                <i class="fas fa-play-circle"></i>
+                            </button>
+                            <span class="video_runningtime">2:04</span>
+                        </div>
+                        <div class="video_info">
+                            <a href="#">
+                                <h3 class="video_title">
+                                    제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                </h3>
+                            </a>
+                            <a href="#">
+                                <span class="video_group red">
+                                    퓨어2022 겨울스탁
+                                    <i class="fas fa-frown red"></i>
+                                </span>
+                            </a>
+                            <span class="video_detail">
+                                1.8M views
+                                <i class="fas fa-calendar-alt"></i>
+                                11 Months ago
+                            </span>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video_img">
+                            <a href="#">
+                                <img
+                                    class="video_thumb"
+                                    src="https://pbs.twimg.com/media/EYEZb15UYAQfWj9.jpg"
+                                    alt="비디오썸네일">
+                            </a>
+                            <button class="video_play_btn" type="button">
+                                <i class="fas fa-play-circle"></i>
+                            </button>
+                            <span class="video_runningtime">2:04</span>
+                        </div>
+                        <div class="video_info">
+                            <a href="#">
+                                <h3 class="video_title">
+                                    제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                </h3>
+                            </a>
+                            <a href="#">
+                                <span class="video_group green">
+                                    퓨어2022 겨울스탁
+                                    <i class="fas fa-frown green"></i>
+                                </span>
+                            </a>
+                            <span class="video_detail">
+                                1.8M views
+                                <i class="fas fa-calendar-alt"></i>
+                                11 Months ago
+                            </span>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video_img">
+                            <a href="#">
+                                <img
+                                    class="video_thumb"
+                                    src="https://pbs.twimg.com/media/EYEZb15UYAQfWj9.jpg"
+                                    alt="비디오썸네일">
+                            </a>
+                            <button class="video_play_btn" type="button">
+                                <i class="fas fa-play-circle"></i>
+                            </button>
+                            <span class="video_runningtime">2:04</span>
+                        </div>
+                        <div class="video_info">
+                            <a href="#">
+                                <h3 class="video_title">
+                                    제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                </h3>
+                            </a>
+                            <a href="#">
+                                <span class="video_group red">
+                                    퓨어2022 겨울스탁
+                                    <i class="fas fa-frown red"></i>
+                                </span>
+                            </a>
+                            <span class="video_detail">
+                                1.8M views
+                                <i class="fas fa-calendar-alt"></i>
+                                11 Months ago
+                            </span>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video_img">
+                            <a href="#">
+                                <img
+                                    class="video_thumb"
+                                    src="https://pbs.twimg.com/media/EYEZb15UYAQfWj9.jpg"
+                                    alt="비디오썸네일">
+                            </a>
+                            <button class="video_play_btn" type="button">
+                                <i class="fas fa-play-circle"></i></i>
+                            </button>
+                            <span class="video_runningtime">2:04</span>
+                        </div>
+                        <div class="video_info">
+                            <a href="#">
+                                <h3 class="video_title">
+                                    제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                </h3>
+                            </a>
+                            <a href="#">
+                                <span class="video_group green">
+                                    퓨어2022 겨울스탁
+                                    <i class="fas fa-frown green"></i>
+                                </span>
+                            </a>
+                            <span class="video_detail">
+                                1.8M views
+                                <i class="fas fa-calendar-alt"></i>
+                                11 Months ago
+                            </span>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video_img">
+                            <a href="#">
+                                <img
+                                    class="video_thumb"
+                                    src="https://pbs.twimg.com/media/EYEZb15UYAQfWj9.jpg"
+                                    alt="비디오썸네일">
+                            </a>
+                            <button class="video_play_btn" type="button">
+                                <i class="fas fa-play-circle"></i>
+                            </button>
+                            <span class="video_runningtime">2:04</span>
+                        </div>
+                        <div class="video_info">
+                            <a href="#">
+                                <h3 class="video_title">
+                                    제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                </h3>
+                            </a>
+                            <a href="#">
+                                <span class="video_group red">
+                                    퓨어2022 겨울스탁
+                                    <i class="fas fa-frown red"></i>
+                                </span>
+                            </a>
+                            <span class="video_detail">
+                                1.8M views
+                                <i class="fas fa-calendar-alt"></i>
+                                11 Months ago
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

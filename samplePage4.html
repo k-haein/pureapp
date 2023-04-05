@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Blog</title>
+        <link rel="stylesheet" href="samplePage4.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>My Blog</h1>
+                <nav>
+                    <ul class="nav-menu">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <h2>Article Title 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nulla eget
+                        lectus tempor rhoncus.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article>
+                    <h2>Article Title 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nulla eget
+                        lectus tempor rhoncus.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article>
+                    <h2>Article Title 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nulla eget
+                        lectus tempor rhoncus.</p>
+                    <a href="#">Read More</a>
+                </article>
+            </section>
+            <aside>
+                <h2>About Me</h2>
+                <p>Hi there! My name is John and I'm a blogger. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Sed vel nulla eget lectus tempor rhoncus. Proin
+                    gravida dictum lorem, non porttitor arcu bibendum non. Integer non magna sit
+                    amet nulla tincidunt tincidunt eu vel ipsum. Duis interdum vulputate ante, vel
+                    tempus massa blandit ut. Aenean viverra orci quis justo lobortis, ac mattis
+                    augue tincidunt.</p>
+                <p>If you have any questions or comments, feel free to contact me at
+                    john@myblog.com</p>
+            </aside>
+        </main>
+        <footer>
+            <p>&copy; 2023 My Blog</p>
+        </footer>
+        <script>
+        
+            /* Toggle mobile navigation menu */
+            const menuIcon = document.querySelector('.mobile-menu');
+            const navMenu = document.querySelector('.nav-menu');
+
+            menuIcon.addEventListener('click', () => {
+                navMenu
+                    .classList
+                    .toggle('show');
+            });
+        </script>
+    </body>
+</html>

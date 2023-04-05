@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+/* 전체 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 글자 기본 */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Header */
+header {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+
+    .container {
+        display: flex;
+        justify-content: space-between; //메인축 방향으로 아이템 정렬
+        align-items: center;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        nav {
+            display: flex;
+            float: right;
+
+            ul {
+                list-style: none;
+
+                li {
+                    display: inline-block;
+                    margin-left: 20px;
+
+                    a {
+                        text-decoration: none;
+                        color: #333;
+
+                        &:hover {
+                            color: #2ecc71;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Main */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+
+    section {
+        flex: 2;
+        margin-right: 1rem;
+
+        article {
+            background-color: #f2f2f2;
+            padding: 1rem;
+            margin-bottom: 1rem;
+
+            h2 {
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                margin-bottom: 1rem;
+            }
+
+            a {
+                color: #333;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+
+    aside {
+        flex: 1;
+        background-color: #f2f2f2;
+        padding: 1rem;
+
+        h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+/* 반응형 */
+
+// 최대 너비 설정
+@media screen and (max-width: 415px) { //iPhone XR 기준
+    .container {
+        flex-direction: column;
+    }
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    .mobile-menu {
+        display: block;
+        span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: #555;
+            margin: 5px auto;
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* 모바일 용 네비게이션 메뉴 */
+
+// PC화면에서 네비게이션 숨기기
+@media screen and (min-width: 415px) {
+    .nav-menu {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin: 0;
+
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-left: 30px;
+
+            a {
+                color: #555;
+                text-decoration: none;
+
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+// 화면 작아지면 네비게이션 아이콘 나타나기
+@media screen and (max-width: 415px) {
+    // 햄버거모양 네비게이션 아이콘
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border: 1px solid #555;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 28px;
+        cursor: pointer;
+
+        span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: #555;
+            margin: 5px auto;
+        }
+    }
+
+    // PC 메뉴는 지우고
+    .nav-menu {
+        display: none;
+    }
+    // nav-menu show 가 되면 토글 클릭하면 보여지기
+    .show {
+        display: block;
+    }
+
+    // 모바일용 메뉴 나오기
+    .mobile-nav {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #fff;
+        border: 1px solid #555;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+
+            a {
+                color: #555;
+                text-decoration: none;
+
+                &:hover {
+                    color: #000;
+                }
+            }
+
+        }
+    }
+
+}

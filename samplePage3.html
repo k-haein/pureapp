@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blog Template</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+  
+ /* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav li {
+  margin: 0 10px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Main Content */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+article {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 600px) {
+  article {
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  article {
+    width: 31%;
+  }
+}
+
+article img {
+  max-width: 100%;
+}
+
+article h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+article p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+  
+  
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <h1>Blog Title</h1>
+      <p>A blog about something interesting</p>
+    </section>
+
+    <main>
+      <section class="posts">
+        <h2>Recent Posts</h2>
+
+        <ul>
+          <li>
+            <a href="#">
+              <h3>Post Title 1</h3>
+              <p>Short description of post 1</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h3>Post Title 2</h3>
+              <p>Short description of post 2</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h3>Post Title 3</h3>
+              <p>Short description of post 3</p>
+            </a>
+          </li>
+        </ul>
+
+        <div class="pagination">
+          <a href="#">Previous</a>
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">Next</a>
+        </div>
+      </section>
+
+      <aside>
+        <section class="search">
+          <form action="#">
+            <input type="text" placeholder="Search">
+            <button>Go</button>
+          </form>
+        </section>
+
+        <section class="categories">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">Category 1</a></li>
+            <li><a href="#">Category 2</a></li>
+            <li><a href="#">Category 3</a></li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Blog Template</p>
+    </footer>
+  </div>
+</body>
+
+</html>
